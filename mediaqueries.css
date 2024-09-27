@@ -1,0 +1,116 @@
+/* if the screen size has a width less than 1400 pixels, 
+shift from desktop nav to hamburger nav*/
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+}
+/* if the screen size has a width less than 1200 pixels, 
+shift from desktop nav to hamburger nav*/
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+  /* don't show arrow for small screens */
+  .arrow {
+    display: none;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  /* set the margin limits for EVERY section */
+  section {
+    margin: 0 5%;
+  }
+  /* resize the pictures to fit within mobile dimensions */
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  /* ensure all containers wrap */
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  /* decrease link font size (especially in the contact section) */
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  /* resize the frontend dev line in experience section */
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  /* make the profile smaller and centered */
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  /* the first front-end developer line is made smaller */
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  /* the name John Doe is made smaller */
+  .title {
+    font-size: 2rem;
+  }
+
+  /* make the text take the whole width of the container */
+  .text-container {
+    text-align: justify;
+  }
+}
