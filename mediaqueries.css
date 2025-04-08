@@ -5,8 +5,34 @@ shift from desktop nav to hamburger nav*/
     height: 83vh;
     margin-bottom: 6rem;
   }
+  .box {
+    width: 175px;
+    height: 175px;
+    /* -webkit-transform: scale(0.85);
+    transform: scale(0.85); */
+  }
+
+  p.skill-name {
+    font-size: 1.75rem;
+  }
+  .section__pic-container {
+    width: 310px;
+    height: 310px;
+    margin: 0 auto 2rem;
+  }
+  .section-gradpic {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .about-containers {
     flex-wrap: wrap;
+  }
+  .text-container {
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+  }
+  .about-details-container {
+    max-width: fit-content;
   }
 }
 /* if the screen size has a width less than 1200 pixels, 
@@ -30,6 +56,15 @@ shift from desktop nav to hamburger nav*/
   /* don't show arrow for small screens */
   .arrow {
     display: none;
+  }
+  .sect-divider {
+    display: none;
+  }
+  .box {
+    width: 175px;
+    height: 175px;
+    /* -webkit-transform: scale(0.85);
+    transform: scale(0.85); */
   }
 
   section,
@@ -75,6 +110,10 @@ shift from desktop nav to hamburger nav*/
     flex-wrap: wrap;
   }
 
+  .projects-container {
+    flex: auto;
+  }
+
   /* decrease link font size (especially in the contact section) */
   .contact-info-container p,
   .nav-links li a {
@@ -88,7 +127,9 @@ shift from desktop nav to hamburger nav*/
   .logo {
     font-size: 1.5rem;
   }
-
+  h3 {
+    font-size: 1em;
+  }
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
@@ -104,6 +145,11 @@ shift from desktop nav to hamburger nav*/
   .section__text__p2 {
     font-size: 1.25rem;
   }
+
+  .text-container {
+    font-size: 1.1rem;
+    overflow: auto;
+  }
   /* the name John Doe is made smaller */
   .title {
     font-size: 2rem;
@@ -112,5 +158,34 @@ shift from desktop nav to hamburger nav*/
   /* make the text take the whole width of the container */
   .text-container {
     text-align: justify;
+  }
+  .box {
+    width: 130px;
+    height: 150px;
+    /* -webkit-transform: scale(0.85);
+    transform: scale(0.85); */
+  }
+
+  p.skill-name {
+    font-size: 1.4rem;
+  }
+  .project-title {
+    font-size: 0.2 rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .text-container {
+    font-size: 1rem;
+    overflow: auto;
+  }
+  .box {
+    width: 110px;
+    height: 120px;
+    /* -webkit-transform: scale(0.85);
+    transform: scale(0.85); */
+  }
+
+  p.skill-name {
+    font-size: 1.1rem;
   }
 }
