@@ -18,6 +18,12 @@ var meleeLive = false;
 const meleeDemo = document.querySelector(".melee-demo-container");
 
 function toggleTetrisDemo() {
+  var screenWidth = window.innerWidth;
+  console.log(screenWidth);
+  if (screenWidth < 700) {
+    open("https://youtu.be/D080aKT6F08?si=72kwrr8C2LA3dO6M");
+    return;
+  }
   // if the demo's not live, turn it on with the tetris one specifically
   if (demoLive == false) {
     liveDemo.classList.add("open");
@@ -43,6 +49,12 @@ function toggleTetrisDemo() {
 }
 
 function toggleMeleeDemo() {
+  var screenWidth = window.innerWidth;
+  console.log(screenWidth);
+  if (screenWidth < 700) {
+    open("https://youtu.be/spHpFPsHeQ8?si=AFQlc_uTAo13aAO-");
+    return;
+  }
   // if the demo's not live, turn it on with the melee one specifically
   if (demoLive == false) {
     liveDemo.classList.add("open");

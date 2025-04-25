@@ -111,9 +111,15 @@ shift from desktop nav to hamburger nav*/
   }
 
   .projects-container {
-    flex: auto;
+    /* flex: auto; */
+    width: 280px;
+    flex: none;
+    padding-bottom: 1.5rem;
   }
-
+  .live-demo-container iframe {
+    width: 350px;
+    height: 200px;
+  }
   /* decrease link font size (especially in the contact section) */
   .contact-info-container p,
   .nav-links li a {
