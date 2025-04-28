@@ -314,7 +314,10 @@ section {
 .btn-container {
   gap: 1rem;
 }
-
+.gitcatdemo {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
 /* ABOUT SECTION */
 
 #about {
